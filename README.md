@@ -36,8 +36,7 @@ Instalación
 
 1. Clona el repositorio:
 
-git clone https://github.com/TU-USUARIO/YTDrop.git
-
+git clone https://github.com/KingPitikiOFC/YTdrop.git
 2. Entra a la carpeta del proyecto:
 
 cd YTDrop
@@ -153,4 +152,3 @@ KingPitikiOFC
 Licencia
 
 Este proyecto es de uso libre para aprendizaje y desarrollo personal.
-NO ME HAGO RESPONSABLE DEL MAL USO QUE LE DEN!
