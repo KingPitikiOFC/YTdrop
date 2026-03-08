@@ -1,154 +1,157 @@
-YouTube Drop 1.0
+# 🎬 YouTube Drop
 
-YouTube Drop es una herramienta de línea de comandos escrita en Python que permite descargar videos y audios de YouTube de forma rápida y sencilla.
+Herramienta de línea de comandos escrita en **Python** para descargar **videos y audios de YouTube** de forma rápida y sencilla.
 
-El programa utiliza la biblioteca yt‑dlp y La herramienta externa FFmpeg para la descarga de video y audio en formato MP4 y MP3.
----
-
-Características
-
-- Descarga videos completos de YouTube.
-- Descarga audio en formato MP3.
-- Barra de progreso en la terminal.
-- Spinner de descarga
-- Historial automático de descargas.
-- Interfaz simple por menú en la terminal.
-- Compatible con Python 3.
+Utiliza **yt-dlp** para la descarga y **FFmpeg** para la conversión a **MP4** y **MP3**.
 
 ---
 
-Requisitos
+## ✨ Características
 
-- Python 3.8 o superior
-- yt-dlp
-- FFmpeg
+- Descarga videos completos de YouTube
+- Descarga audio en formato **MP3**
+- Barra de progreso en la terminal
+- Animación **spinner** durante la descarga
+- Historial automático de descargas
+- Interfaz simple por menú
+- Compatible con **Python 3**
 
-Instalar dependencia:
+---
 
+## ⚙️ Requisitos
+
+- Python **3.8+**
+- **yt-dlp**
+- **FFmpeg**
+
+---
+
+## 📦 Instalación (Termux)
+
+```bash
 pkg update && pkg upgrade
 pkg install python -y
 pkg install ffmpeg -y
 pip install yt-dlp
+```
 
 ---
 
-Instalación
+## 🚀 Instalación del proyecto
 
-1. Clona el repositorio:
-
+```bash
 git clone https://github.com/KingPitikiOFC/YTdrop.git
-2. Entra a la carpeta del proyecto:
-
 cd YTdrop
-
-3. Ejecuta el script:
-
 python yt.py
+```
 
 ---
 
-Uso
+## 📥 Uso
 
-Al ejecutar el programa verás el menú:
+Al ejecutar el programa aparecerá el menú:
 
-1. Video por URL
-2. Audio por URL
+```
+1) Descargar video por URL
+2) Descargar audio por URL
+3) Salir
+```
 
-Descargar video
+### Descargar video
 
-1. Selecciona la opción 1
-2. Pega la URL del video de YouTube
+1. Selecciona **1**
+2. Pega la URL del video
 3. El video se descargará automáticamente
 
-Descargar audio
-
-1. Selecciona la opción 2
-2. Pega la URL del video
-3. El audio se convertirá a MP3
-
----
-
-Dónde se guardan las descargas
-
-El programa crea automáticamente estas carpetas:
-
-/sdcard/YouTube/
-
-Dentro de esa carpeta se crean:
-
-/sdcard/YouTube/Audio
-/sdcard/YouTube/Video
-
-Videos descargados
-
-/sdcard/YouTube/Video/
-
 Formato:
 
+```
 NombreDelVideo.mp4
-
-Audios descargados
-
-/sdcard/YouTube/Audio/
-
-Formato:
-
-NombreDelVideo.mp3
+```
 
 ---
 
-Historial de descargas
+### Descargar audio
+
+1. Selecciona **2**
+2. Pega la URL del video
+3. El audio se convertirá a **MP3**
+
+Formato:
+
+```
+NombreDelVideo.mp3
+```
+
+---
+
+## 📁 Ubicación de descargas
+
+El programa crea automáticamente:
+
+```
+/sdcard/YouTube/
+```
+
+Dentro se generan las carpetas:
+
+```
+/sdcard/YouTube/Video/
+/sdcard/YouTube/Audio/
+```
+
+---
+
+## 🧾 Historial de descargas
 
 Cada descarga se guarda en:
 
+```
 /sdcard/YouTube/history.json
-
-El archivo contiene:
-
-{
-    "archivo": "Nombre del video",
-    "ruta": "Ruta del archivo",
-    "fecha": "YYYY-MM-DD HH:MM:SS"
-}
-
-Esto permite llevar un registro de lo que has descargado.
-
----
-
-Interfaz en consola
-
-El programa muestra:
-
-- Mensajes de información
-- Barra de progreso
-- Animación de descarga
-- Mensajes de éxito o error
+```
 
 Ejemplo:
 
-[INFO] Preparando descarga...
-[●●●●●○○○○○○○○○○○○○○○○○○○○○] 45.3%
-[ÉXITO] Descarga completada!
+```json
+{
+ "archivo": "Nombre del video",
+ "ruta": "Ruta del archivo",
+ "fecha": "YYYY-MM-DD HH:MM:SS"
+}
+```
 
 ---
 
-Estructura del proyecto
+## 🖥️ Interfaz en consola
 
+Ejemplo:
+
+```
+[INFO] Preparando descarga...
+[██████████░░░░░░░░░░] 45.3%
+[ÉXITO] Descarga completada
+```
+
+---
+
+## 📂 Estructura del proyecto
+
+```
 YTDrop
-│
 ├── yt.py
 └── README.md
+```
 
 ---
 
-Autor
+## 👨‍💻 Autor
 
-Proyecto creado por:
-
-KingPitikiOFC
+**KingPitikiOFC**
 
 ---
 
-Licencia
+## 📜 Licencia
 
-Este proyecto es de uso libre para aprendizaje y desarrollo personal.
+Proyecto de uso libre para **aprendizaje y desarrollo personal**.
+
+El autor **no se hace responsable del uso indebido del software**.
