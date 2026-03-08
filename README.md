@@ -39,7 +39,7 @@ Instalación
 git clone https://github.com/KingPitikiOFC/YTdrop.git
 2. Entra a la carpeta del proyecto:
 
-cd YTDrop
+cd YTdrop
 
 3. Ejecuta el script:
 
