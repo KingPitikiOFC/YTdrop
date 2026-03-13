@@ -1,15 +1,13 @@
 #!/usr/bin/env bash
 
-# colors
 RED="\033[0;31m"
 GREEN="\033[0;32m"
 YELLOW="\033[1;33m"
 BLUE="\033[0;34m"
-NC="\033[0m" # no color
+NC="\033[0m"
 
 echo -e "${BLUE}Checking dependencies...${NC}"
 
-# python
 if command -v python >/dev/null 2>&1; then
     echo -e "${GREEN}python OK${NC}"
 else
@@ -17,7 +15,6 @@ else
     pkg install python -y
 fi
 
-# ffmpeg
 if command -v ffmpeg >/dev/null 2>&1; then
     echo -e "${GREEN}ffmpeg OK${NC}"
 else
@@ -25,7 +22,6 @@ else
     pkg install ffmpeg -y
 fi
 
-# yt-dlp
 python - <<EOF
 try:
     import yt_dlp
