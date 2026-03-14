@@ -6,6 +6,16 @@ YELLOW="\033[1;33m"
 BLUE="\033[0;34m"
 NC="\033[0m"
 
+echo -e "${BLUE}Updating repository...${NC}"
+
+# Verifica si el proyecto es un repositorio git
+if [ -d ".git" ]; then
+    git pull origin main
+    echo -e "${GREEN}Repository updated${NC}"
+else
+    echo -e "${YELLOW}Not a git repository, skipping update${NC}"
+fi
+
 echo -e "${BLUE}Checking dependencies...${NC}"
 
 if command -v python >/dev/null 2>&1; then
