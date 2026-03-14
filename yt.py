@@ -9,7 +9,7 @@ import json
 from datetime import datetime
 import yt_dlp
 
-MAINTENANCE_MODE = True
+MAINTENANCE_MODE = False
 MAINTENANCE_REASON = "Implementación de soporte 24/7 h"
 
 if MAINTENANCE_MODE:
