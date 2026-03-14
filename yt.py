@@ -10,12 +10,12 @@ from datetime import datetime
 import yt_dlp
 
 MAINTENANCE_MODE = True
-MAINTENANCE_REASON = "Actualizando sistema de descargas"
+MAINTENANCE_REASON = "Implementación de soporte 24/7 h"
 
 if MAINTENANCE_MODE:
     print(f"""
 ╔══════════════════════════════╗
-║        ⛔MANTENIMIENTO⛔      ║
+║       ⛔MANTENIMIENTO⛔      ║
 ╚══════════════════════════════╝
 
 YTdrop está temporalmente en mantenimiento.
@@ -23,12 +23,10 @@ Motivo: {MAINTENANCE_REASON}
 
 Intenta nuevamente más tarde.
 
-— KingPitikiOFC
+— ATT: KingPitikiOFC
 """)
     sys.exit()
-# ==============================
 
-# Directorios de almacenamiento
 AUDIO_DIR = "/sdcard/YouTube/Audio"
 VIDEO_DIR = "/sdcard/YouTube/Video"
 HISTORY_DIR = "/sdcard/YouTube"
