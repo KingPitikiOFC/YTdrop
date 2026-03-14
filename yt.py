@@ -9,10 +9,7 @@ import json
 from datetime import datetime
 import yt_dlp
 
-# ==============================
-# MODO MANTENIMIENTO
-# ==============================
-MAINTENANCE_MODE = True  # <-- Cambia a False cuando termines
+MAINTENANCE_MODE = False
 MAINTENANCE_REASON = "Actualizando sistema de descargas"
 
 if MAINTENANCE_MODE:
